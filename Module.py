@@ -13,7 +13,7 @@ while location == 0:
 	if user_input == "look":
 		print location_0_description
 	elif user_input == "look object1":
-		print "object 1 description"
+		print object_1_description
 	elif user_input == "right":
 		location = 1
 	else:
