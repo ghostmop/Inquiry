@@ -20,6 +20,7 @@ while location == 0:
 		print "That is not a valid command."
 while location == 1:
 	raw_input("You are now in a new location! ")
+
 raw_input("Press Enter to exit.")
 
 
