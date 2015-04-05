@@ -1,4 +1,4 @@
-location_4_description = "You are standing outside of MUSC. The Willy Dog stand stands out to you. Haha, get it? You see The Starbucks is to your right, Mills library is behind you, and MDCL lies to the left."
+location_4_description = "You are standing outside of MUSC. The Willy Dog stand stands out to you. Haha, get it? You see The Starbucks is to your right, Mills Library is behind you, and MDCL lies to the left."
 print location_4_description
 
 Willy_Dog = "It\'s an endearing hot dog stand in the shape of a hot dog. The words 'Willy Dog' are written in red alongside a dog with a hot dog for a body. The 'W' in 'Willy' sticks out to you. The attendant looks friendly."
