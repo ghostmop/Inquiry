@@ -90,7 +90,8 @@ while True:	#location 0
 			print "That is not a valid command."
 
 	location_2_description = "You find yourself in the first floor of Mills Library. The sign for the library catches your eye. The librarian also looks eager to help. The exit outdoors is behind you and the door to the MUSC food court is to your left."
-	print location_2_description
+	if location == 2:
+		print location_2_description
 
 	sign_description = "the sign says \"Mills Memorial Library\". The \"Y\" seems particularly important to you, but you're not sure why. Haha, get it?"
 
@@ -129,11 +130,11 @@ while True:	#location 0
 		else:
 			print "That is not a valid command."
 
-		location_4_description = "You are standing outside of MUSC. The Willy Dog stand stands out to you. Haha, get it? You see The Starbucks is to your right, Mills Library is behind you, and MDCL lies to the left."
+	location_4_description = "You are standing outside of MUSC. The Willy Dog stand stands out to you. Haha, get it? You see The Starbucks is to your right, Mills Library is behind you, and MDCL lies to the left."
 
-		Willy_Dog = "It\'s an endearing hot dog stand in the shape of a hot dog. The words 'Willy Dog' are written in red alongside a dog with a hot dog for a body. The 'W' in 'Willy' sticks out to you. The attendant looks friendly."
+	Willy_Dog = "It\'s an endearing hot dog stand in the shape of a hot dog. The words 'Willy Dog' are written in red alongside a dog with a hot dog for a body. The 'W' in 'Willy' sticks out to you. The attendant looks friendly."
 
-		Attendant_dialogue = "The girl attending the stand smiles as she asks, "
+	Attendant_dialogue = "The girl attending the stand smiles as she asks, "
 
 	while location == 4:
 		user_input = raw_input("What would you like to do? ")
@@ -160,3 +161,38 @@ while True:	#location 0
 			print "You have trouble going up the stairs and give up."
 		else:
 			print "That is not a valid command."
+
+	location_6_description = "You find yourself inside of MDCL. Behind you lies the Outdoors, and ahead of you is HSC. You wonder what Tim Horton\'s has on their menu today. You also happen to see one of your good friends at the cashier with a large cup of coffee in hand."
+	if location == 6:
+		print location_6_description
+
+	menu_description = "The menu reads Coffee : $1.60 (Medium) ; Donut : $0.99 ; Muffin : $1.29 ; Cookie : $0.99 ; 10-pack Timbits : $2.30 ; Cheesy Pizza : $5.00 ; Mac and Cheese : $4.00 (Large)."
+
+	friend = "Hey! Haven't seen you in a while. Say...which course do you think is more stressful: Cell Bio or Inquiry?"
+	cellbio_answer = "Yeah, Cell Bio's got me bogged down too. And the number of group meetings my group schedules each week is pretty crazy. I hardly have time for anything else!"
+	inquiry_answer = "Heh, I suppose having the word \"Why\" thrown at you every class can be pretty stressful. Haha. Instantly, an image of the letter \"Y\" enters your mind, but you really aren't sure why."
+
+	while location == 6:
+		user_input = raw_input("What would you like to do? ")
+		if user_input == "look":
+			print location_6_description
+		elif user_input == "look menu":
+			print menu_description
+		elif user_input == "talk" or user_input == "talk friend":
+			course_q1 = raw_input(friend)
+			if course_q1.lower() == "cell bio":
+				print cellbio_answer
+			elif course_q1.lower() == "inquiry":
+				print inquiry_answer
+			else:
+				print "Your friend leans closer and says, \"Sorry, what was that?\""
+		elif user_input == "back":
+			location = 4
+		elif user_input == "forward":
+			location = 7
+		else: 
+			print "That is not a valid command."
+
+	else:
+		raw_input("Uh-oh.")
+		break
