@@ -1,5 +1,6 @@
 location_6_description = "You find yourself inside of MDCL. Behind you lies the Outdoors, and ahead of you is HSC. You wonder what Tim Horton\'s has on their menu today. You also happen to see one of your good friends at the cashier with a large cup of coffee in hand."
-print location_6_description
+if location = 6:
+	print location_6_description
 
 menu_description = "The menu reads Coffee : $1.60 (Medium) ; Donut : $0.99 ; Muffin : $1.29 ; Cookie : $0.99 ; 10-pack Timbits : $2.30 ; Cheesy Pizza : $5.00 ; Mac and Cheese : $4.00 (Large)."
 
