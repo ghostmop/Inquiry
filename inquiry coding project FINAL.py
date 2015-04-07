@@ -5,6 +5,7 @@ print "There are clues scattered around campus that will lead you to the passwor
 print "Find these clues and rescue your class!"
 print "Your adventure starts at Togo Salmon Hall, otherwise known as TSH. "
 print "You have the option of looking at your surroundings [look] or going [forward] to the MUSC food court"
+victory = False
 location = 0
 
 while True:	#location 0
@@ -233,11 +234,13 @@ while True:	#location 0
 		user_input = raw_input("Enter the secret passcode below. Do not use spaces.")
 		if user_input.lower() == "hcihywylt":
 			print congrats_message
+			victory = True
 			break
 		elif user_input == "back":
 			location = 7
 		else:
 			print "I'm sorry, but that is not the correct passcode. Please try again."
-	break
 
+	if victory == True:
+		break
 raw_input("Press enter to accept the praise of your peers.")
